@@ -1,8 +1,9 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
   height: 100%;
-  color: #777;
+  color: #505050;
   line-height: 1.8;
+  background-color: #f1ffff;
 }
 
 /* Create a Parallax Effect */
@@ -92,7 +93,7 @@ body, html {
 }
 
 .flip-card-front {
-  background-color: #fff;
+  background-color: #f1ffff;
   color: black;
 }
 
@@ -110,4 +111,88 @@ body, html {
   height: 100%;
   width: auto;
   object-fit: cover; /* Ensure the image covers the container */
+}
+
+.protocol-list {
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.protocol-list li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #2c3e50;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.protocol-list li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.protocol-list i {
+  margin-right: 10px;
+  font-size: 1.5em;
+  width: 1.5em;
+  text-align: center;
+}
+
+.protocol-list i.fa-globe {
+  color: #3498db;
+}
+
+.protocol-list i.fa-users {
+  color: #2ecc71;
+}
+
+.protocol-list i.fa-flask {
+  color: #e67e22;
+}
+
+.protocol-list i.fa-lock {
+  color: #e74c3c;
+}
+
+.protocol-list i.fa-exchange {
+  color: #9b59b6;
+}
+
+.protocol-list i.fa-balance-scale {
+  color: #f1c40f;
+}
+
+.protocol-list i.fa-heart {
+  color: #ff6b6b;
+}
+
+.protocol-list i.fa-gamepad {
+  color: #3498db;
+}
+
+.protocol-list i.fa-cogs {
+  color: #2ecc71;
+}
+
+.protocol-list i.fa-robot {
+  color: #e67e22;
+}
+
+.protocol-list i.fa-handshake-o {
+  color: #9b59b6;
+}
+
+.protocol-list i.fa-paint-brush {
+  color: #e74c3c;
+}
+
+.custom-pale-blue {
+  background-color: #f1ffff;
+  color: #505050!important;
 }
