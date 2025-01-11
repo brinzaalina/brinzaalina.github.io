@@ -90,6 +90,7 @@ body, html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 10px;
 }
 
 .flip-card-front {
@@ -98,7 +99,7 @@ body, html {
 }
 
 .flip-card-back {
-  background-color: #2980b9;
+  background-color: #1C5982;
   color: white;
   transform: rotateY(180deg);
 }
