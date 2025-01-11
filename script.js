@@ -27,3 +27,11 @@ function onClick(element) {
           x.className = x.className.replace(" w3-show", "");
       }
   }
+
+  document.querySelectorAll('img[role="button"]').forEach(img => {
+    img.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        onClick(img);
+      }
+    });
+  });
