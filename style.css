@@ -50,6 +50,7 @@ body, html {
   display: grid;
   justify-content: center;
   color: #dadada;
+  background-color: rgba(0, 0, 0, 0.01);
 }
 
 #visual-contexts {
@@ -196,6 +197,6 @@ body, html {
 }
 
 .custom-pale-blue {
-  background-color: #f1ffff;
+  background-color: #f1ffff!important;
   color: #505050!important;
 }
