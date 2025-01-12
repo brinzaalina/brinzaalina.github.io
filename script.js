@@ -35,3 +35,11 @@ function onClick(element) {
       }
     });
   });
+
+  ocument.querySelectorAll('p[role="button"]').forEach(img => {
+    img.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        onClick(img);
+      }
+    });
+  });
