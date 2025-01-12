@@ -11,32 +11,33 @@
   </head>
   <body>
 
-  <div class="w3-top">
-    <div class="w3-bar" id="myNavbar">
-      <a href="#" class="w3-bar-item w3-button w3-wide">THE PROTOCOL JOURNEY</a>
-      <div class="w3-right w3-hide-small">
-          <a href="#definitions" class="w3-bar-item w3-button">FOUNDATIONS</a>
-          <a href="#personal-reflection" class="w3-bar-item w3-button">MY PERSPECTIVE</a>
-          <a href="#voices" class="w3-bar-item w3-button">VOICES</a>
-          <a href="#visual-contexts" class="w3-bar-item w3-button">VISUALS</a>
-          <a href="#impossible-context" class="w3-bar-item w3-button">IMPOSSIBLE</a>
-          <a href="#variations" class="w3-bar-item w3-button">VARIATIONS</a>
+  
+
+  <div class="bgimg-1 w3-display-container" id="home">
+    <div class="w3-top">
+      <div class="w3-bar" id="myNavbar">
+        <a href="#" class="w3-bar-item w3-button w3-wide">THE PROTOCOL JOURNEY</a>
+        <div class="w3-right w3-hide-small">
+            <a href="#definitions" class="w3-bar-item w3-button">FOUNDATIONS</a>
+            <a href="#personal-reflection" class="w3-bar-item w3-button">MY PERSPECTIVE</a>
+            <a href="#voices" class="w3-bar-item w3-button">VOICES</a>
+            <a href="#visual-contexts" class="w3-bar-item w3-button">VISUALS</a>
+            <a href="#impossible-context" class="w3-bar-item w3-button">IMPOSSIBLE</a>
+            <a href="#variations" class="w3-bar-item w3-button">VARIATIONS</a>
+        </div>
+        <p class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleFunction()" tabindex="0" role="button" aria-label="Open Menu"><i class="fa fa-bars"></i></p>
+    </div>
+  
+      <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="#definitions" class="w3-bar-item w3-button" onclick="toggleFunction()">FOUNDATIONS</a>
+        <a href="#personal-reflection" class="w3-bar-item w3-button" onclick="toggleFunction()">MY PERSPECTIVE</a>
+        <a href="#voices" class="w3-bar-item w3-button" onclick="toggleFunction()">VOICES</a>
+        <a href="#visual-contexts" class="w3-bar-item w3-button" onclick="toggleFunction()">VISUALS</a>
+        <a href="#impossible-context" class="w3-bar-item w3-button" onclick="toggleFunction()">IMPOSSIBLE</a>
+        <a href="#variations" class="w3-bar-item w3-button" onclick="toggleFunction()">VARIATIONS</a>
       </div>
-      <p class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleFunction()" tabindex="0" role="button" aria-label="Open Menu"><i class="fa fa-bars"></i></p>
-  </div>
-
-    <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-      <a href="#definitions" class="w3-bar-item w3-button" onclick="toggleFunction()">FOUNDATIONS</a>
-      <a href="#personal-reflection" class="w3-bar-item w3-button" onclick="toggleFunction()">MY PERSPECTIVE</a>
-      <a href="#voices" class="w3-bar-item w3-button" onclick="toggleFunction()">VOICES</a>
-      <a href="#visual-contexts" class="w3-bar-item w3-button" onclick="toggleFunction()">VISUALS</a>
-      <a href="#impossible-context" class="w3-bar-item w3-button" onclick="toggleFunction()">IMPOSSIBLE</a>
-      <a href="#variations" class="w3-bar-item w3-button" onclick="toggleFunction()">VARIATIONS</a>
-  </div>
-  </div>
-
-  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    </div>
     <div class="w3-display-middle" style="white-space:nowrap;">
       <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">THE <span class="w3-hide-small">PROTOCOL</span> JOURNEY</span>
     </div>
