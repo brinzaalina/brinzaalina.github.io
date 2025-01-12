@@ -19,7 +19,6 @@ body, html {
   background-image: url('images/dropbox-icon-line-icon-connection-circuit-board.jpg');
   min-height: 100%;
   background-color: #2c3e50;
-  opacity: 0.75;
 }
 
 /* Second image (Portfolio) */
@@ -51,6 +50,11 @@ body, html {
   display: grid;
   justify-content: center;
   color: #dadada;
+}
+
+navbar-opaque {
+  background-color: #f1ffff !important;
+  opacity: 1 !important;
 }
 
 #visual-contexts {

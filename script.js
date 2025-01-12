@@ -11,13 +11,23 @@ function onClick(element) {
   window.onscroll = function() {myFunction()};
   function myFunction() {
       var navbar = document.getElementById("myNavbar");
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      var home = document.querySelector(".bgimg-1");
+      var scrollPosition = window.scrollY;
+      var homeHeight = home.offsetHeight;
+      var viewportHeight = window.innerHeight;
+      var threshold = Math.max(homeHeight, viewportHeight) * 0.6;
+      if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
           navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " custom-pale-blue";
-          navbar.style.opacity = "1";
+          if (scrollPosition > threshold) {
+              home.style.opacity = "1";
+          } else {
+              home.style.opacity = "";
+          }
       } else {
           navbar.className = navbar.className.replace(" w3-card w3-animate-top custom-pale-blue", "");
-          navbar.style.opacity = "0.85";
+          home.style.opacity = "";
       }
+      
   }
   
   // Used to toggle the menu on small screens when clicking on the menu button
